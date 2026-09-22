@@ -41,11 +41,40 @@ console.log(typeof outsideTemp);  //object
 // for non primitive typeof is object ,for function it is object function
 
 
-console.log(typeof anotherId); // Symbol
+/*console.log(typeof anotherId); // Symbol
 console.log(typeof scoreValue); //number
 console.log(typeof myFunction);//function
 console.log(typeof heros); //object
 console.log(typeof myObj);//object
 console.log(typeof score);//number
-console.log(typeof isLoggedIn);//boolean
+console.log(typeof isLoggedIn);//boolean*/
 //https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+
+
+//************************************MEMORY******************************* */
+
+// stack(Primitive), Heap (Non- Primitive)
+ //let myCarName : string
+let myCarName = "Porshe"
+
+let anotherCarName = myCarName
+anotherCarName = "Mercedes"
+
+
+console.log(anotherCarName);
+console.log(myCarName);  //same value as before so call by value ,a copy is given so changes will occur in copy
+
+let userOne = {
+    email :"surajkanewar@google.com",
+    upi : "user@ybl"
+
+}
+
+let userTwo = userOne
+
+userTwo.email = "user@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
