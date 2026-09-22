@@ -6,7 +6,7 @@ console.log(2 != 1); */
 
 //console.log("2" > 1);
 //console.log("02" > 1);
-// it gives right value because it automatically converts string into number but it is not not right method so avoid comparing 2 different datatypes
+// it gives right value because it automatically converts string into number but it is  not right method so avoid comparing 2 different datatypes
 // in typescript there is rule that two different datatypes should not be compared 
 
 
